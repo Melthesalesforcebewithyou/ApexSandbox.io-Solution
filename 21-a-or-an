@@ -1,14 +1,15 @@
 public String aOrAn(String word) {
+    //Check if word starts with a vowel
     if(word.startsWith('a')||word.startsWith('e')||word.startsWith('i')||word.startsWith('o')||word.startsWith('u')){
-
+        // prepend with indefinite article 'an' if starts with a vowel 
         String str='an '+word;
-
+        // return prepended statement
         return str;
 
     }
-
+// Otherwise prepend with indefinite article 'a'
   String str= 'a '+word;
-
+// return statement with 'a' indefinite article
   return str;
 
 } 
