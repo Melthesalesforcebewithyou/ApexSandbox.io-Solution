@@ -1,0 +1,6 @@
+public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
+	//Use Math.max method to indentify largest of three integers
+    Integer largest = Math.max(num1, num2, num3);
+    //Return the Ingeter with the largest number
+    return largest;
+}
