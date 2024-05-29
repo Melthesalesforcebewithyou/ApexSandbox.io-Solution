@@ -1,18 +1,11 @@
 public String aOrAn(String word) {
-    String a = 'a ';
-    String an = 'an ';
-    //Check if String parameter is null or empty 
-    if (word == null || word.isEmpty()) {
-        return null;
+    if (word.startsWith('a') || 
+        word.startsWith('e') || 
+        word.startsWith('i') || 
+        word.startsWith('o') || 
+        word.startsWith('u')) {
+        return 'an ' + word;
     }
-    //Check if the word starts with a vowel or not
-    //Change to lowerCase
-
-    String lowerWord = word.toLowerCase();
-
-    if (lowerWord.startsWith('a') || lowerWord.startsWith('e') || lowerWord.startsWith('i') || lowerWord.startsWith('o') || lowerWord.startsWith('u')) {
-        return an + word;
-    } else {
-        return a + word; 
-    }
+    return 'a ' + word;
+}
 }
