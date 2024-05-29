@@ -1,0 +1,10 @@
+public Decimal computeTip(Decimal total, Integer percent) {
+    //Check Integer percent falls within 0-100 percent range
+    if (percent < 0 || percent > 100) {
+        return null;
+    }
+    //Calculate the tip by multiplying total * percent / 100
+    Decimal tip = total * percent / 100;
+    //return the computed tip
+    return tip;
+}
