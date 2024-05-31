@@ -1,0 +1,22 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    //initialize a counter 
+    Integer passCount = 0; 
+
+    //check each condition
+    if (passedExam) {
+        passCount++;
+    }
+    if (passedAssignments) {
+        passCount++;
+        
+    }
+    if (passedProject) {
+        passCount++;
+    }
+    //true if at least of the passed variables are true
+    if (passCount >= 2) {
+        return true;
+    } else {
+        return false;
+    }
+}
