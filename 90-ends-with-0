@@ -1,0 +1,4 @@
+public Boolean isEndWithZero(Integer num){
+    // Check if the number is even
+    return num != null && Math.mod(num, 2) == 0;
+}
