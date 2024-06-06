@@ -1,7 +1,9 @@
 public String evenOrOdd(Integer num) {
+    //Check if input num is null and return invalid input if it is
    if (num == null) {
         return 'Invalid input';
-    }
+    } //Use Math.abs(num) to ensure the method works correctly with negative numbers
+      //Determine if the number is even or odd using Math.mod(Math.abs(num), 2)
     if (Math.mod(Math.abs(num), 2) == 0) {
         return 'even';
     } else {
