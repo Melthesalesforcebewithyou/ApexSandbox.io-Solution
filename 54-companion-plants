@@ -1,10 +1,12 @@
 public Boolean companionPlants(String plant1, String plant2) {
-    if(plant1 == 'lettuce' && plant2 == 'cucumbers' || 
-       plant1 == 'lettuce' && plant2 == 'onions' ||
-       plant1 == 'onions' && plant2 == 'carrots' ||     
-       plant1 == 'onions' && plant2 == 'tomatoes') {
-           return true;
-       } else {
-           return false;
-       }
+    // Define a set of companion plant pairs
+    Set<String> companions = new Set<String>{
+        'lettuce-cucumbers', 'lettuce-onions', 
+        'onions-carrots', 'onions-tomatoes',
+        'cucumbers-lettuce', 'onions-lettuce', 
+        'carrots-onions', 'tomatoes-onions'
+    };
+    
+    // Check if the given pair is in the set
+    return companions.contains(plant1 + '-' + plant2) || companions.contains(plant2 + '-' + plant1);
 }
